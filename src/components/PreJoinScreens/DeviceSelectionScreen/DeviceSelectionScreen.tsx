@@ -55,10 +55,13 @@ const useStyles = makeStyles((theme: Theme) => ({
 interface DeviceSelectionScreenProps {
   name: string;
   roomName: string;
-  setStep: (step: Steps) => void;
+  setStep: ( step: Steps ) => void;
+  token: string;
+
 }
 
-export default function DeviceSelectionScreen({ name, roomName, setStep }: DeviceSelectionScreenProps) {
+export default function DeviceSelectionScreen( { name, roomName, setStep, token }: DeviceSelectionScreenProps )
+{
   const classes = useStyles();
   const { getToken, isFetching } = useAppState();
   const { connect: chatConnect } = useChatContext();

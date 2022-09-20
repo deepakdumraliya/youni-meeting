@@ -96,7 +96,7 @@ export default function AppStateProvider(props: React.PropsWithChildren<{}>) {
         }).then(res => res.json());
       },
       updateRecordingRules: async (room_sid, rules) => {
-        const endpoint = process.env.REACT_APP_TOKEN_ENDPOINT || '/recordingrules';
+        const endpoint = process.env.REACT_APP_TOKEN_ENDPOINT_RECORDING || '/recordingrules';
 
         return fetch(endpoint, {
           headers: {

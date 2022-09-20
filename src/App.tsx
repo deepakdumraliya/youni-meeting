@@ -34,10 +34,11 @@ export default function App() {
   // We will dynamically set the height with 'window.innerHeight', which means that this
   // will look good on mobile browsers even after the location bar opens or closes.
   const height = useHeight();
-
+  console.log( 'Hello' );
   return (
     <Container style={{ height }}>
       {roomState === 'disconnected' ? (
+
         <PreJoinScreens />
       ) : (
         <Main>

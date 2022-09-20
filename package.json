@@ -43,6 +43,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "4.0.3",
     "rimraf": "3.0.2",
+    "serve": "^14.0.1",
     "strip-color": "^0.1.0",
     "swiper": "^8.1.5",
     "ts-node": "^9.1.1",
