@@ -99,21 +99,20 @@ const IntroContainer = (props: IntroContainerProps) => {
   const location = useLocation();
 
   return (
-    <div className={classes.background}>
-      <TwilioLogo className={classes.twilioLogo} />
+    <div>
       {user && location.pathname !== '/login' && <UserMenu />}
       <div className={classes.container}>
-        <div className={classes.innerContainer}>
-          <div className={classes.swooshContainer}>
+        {/* <div className={classes.innerContainer}> */}
+        {/* <div className={classes.swooshContainer}>
             <div className={classes.logoContainer}>
               <VideoLogo />
               <Typography variant="h6" className={classes.title}>
                 Youni
               </Typography>
             </div>
-          </div>
+          </div> */}
           <div className={classes.content}>{props.children}</div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
